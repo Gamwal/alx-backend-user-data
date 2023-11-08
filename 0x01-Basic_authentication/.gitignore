@@ -1,5 +1,5 @@
 *.zip
 SimpleAPI/
-.apis/
+.simpleapi/
 *__pycache__/
 *main*.py

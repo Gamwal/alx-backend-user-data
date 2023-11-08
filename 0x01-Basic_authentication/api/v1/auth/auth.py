@@ -15,11 +15,11 @@ class Auth:
         """
         public method require_auth
         """
+        if path is None or excluded_paths is None or len(excluded_paths) == 0:
+            return True
         if path[-1] != '/':
             path += '/'
-        if path not in excluded_paths or path is None:
-            return True
-        if excluded_paths is None or len(excluded_paths) == 0:
+        if path not in excluded_paths:
             return True
         return False
 
